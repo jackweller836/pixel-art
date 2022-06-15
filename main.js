@@ -12,6 +12,11 @@ function populate(size) {
     const div = document.createElement('div')
     div.classList.add('pixel')
     
+    div.addEventListener('mouseover', function(){
+        if(!draw) return
+        div.style.backgroundColor = color.value
+    })
+
     div.addEventListener('mousedown', function(){
         div.style.backgroundColor = color.value
     })
@@ -22,9 +27,6 @@ function populate(size) {
 
 window.addEventListener("mousedown", function(){
     draw = true
-})
-window.addEventListener("mouseup", function(){
-    draw = false
 })
 
 function reset(){
