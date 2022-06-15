@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Pixel Art - Jack.tools</title>
 </head>
 <body>
     <div class="navbar">
         <button class="btn">Reset</button>
         <input type="color" value="#00eeff" class="color">
-        <input type="number" value="30" class="size">
+        <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;" />
     </div>
     <div class="container">
     </div>
